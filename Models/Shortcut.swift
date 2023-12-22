@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+struct Shortcut: Identifiable {
+    var id = UUID()
+    var keyCombination: String
+    var appName: String
+    var description: String
+}
