@@ -6,10 +6,11 @@
 //
 
 import Foundation
+import ShortcutRecorder
 
-struct Shortcut: Identifiable {
+struct AppShortcut: Identifiable {
     var id = UUID()
-    var keyCombination: String
+    var keyCombination: Shortcut?
     var appName: String
     var description: String
 }

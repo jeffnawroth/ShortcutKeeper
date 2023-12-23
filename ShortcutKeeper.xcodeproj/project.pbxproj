@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B200B8DA2B372697001B5157 /* AddShortcutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200B8D92B372697001B5157 /* AddShortcutView.swift */; };
+		B200B8DD2B373831001B5157 /* ShortcutRecorder in Frameworks */ = {isa = PBXBuildFile; productRef = B200B8DC2B373831001B5157 /* ShortcutRecorder */; };
+		B24231F42B373C3000E6A55D /* ShortcutRecorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24231F32B373C3000E6A55D /* ShortcutRecorderView.swift */; };
 		B26047AE2B35C467006B6324 /* ShortcutKeeperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26047AD2B35C467006B6324 /* ShortcutKeeperApp.swift */; };
 		B26047B02B35C467006B6324 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26047AF2B35C467006B6324 /* ContentView.swift */; };
 		B26047B22B35C469006B6324 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B26047B12B35C469006B6324 /* Assets.xcassets */; };
@@ -38,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B200B8D92B372697001B5157 /* AddShortcutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddShortcutView.swift; sourceTree = "<group>"; };
+		B24231F32B373C3000E6A55D /* ShortcutRecorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutRecorderView.swift; sourceTree = "<group>"; };
 		B26047AA2B35C467006B6324 /* ShortcutKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShortcutKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B26047AD2B35C467006B6324 /* ShortcutKeeperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutKeeperApp.swift; sourceTree = "<group>"; };
 		B26047AF2B35C467006B6324 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B200B8DD2B373831001B5157 /* ShortcutRecorder in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +167,8 @@
 			isa = PBXGroup;
 			children = (
 				B26047E42B35EB8F006B6324 /* ShortcutView.swift */,
+				B200B8D92B372697001B5157 /* AddShortcutView.swift */,
+				B24231F32B373C3000E6A55D /* ShortcutRecorderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -181,6 +189,9 @@
 			dependencies = (
 			);
 			name = ShortcutKeeper;
+			packageProductDependencies = (
+				B200B8DC2B373831001B5157 /* ShortcutRecorder */,
+			);
 			productName = ShortcutKeeper;
 			productReference = B26047AA2B35C467006B6324 /* ShortcutKeeper.app */;
 			productType = "com.apple.product-type.application";
@@ -253,6 +264,9 @@
 				Base,
 			);
 			mainGroup = B26047A12B35C466006B6324;
+			packageReferences = (
+				B200B8DB2B373831001B5157 /* XCRemoteSwiftPackageReference "ShortcutRecorder" */,
+			);
 			productRefGroup = B26047AB2B35C467006B6324 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -295,7 +309,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B200B8DA2B372697001B5157 /* AddShortcutView.swift in Sources */,
 				B26047E02B35EAB2006B6324 /* ShortcutsViewModel.swift in Sources */,
+				B24231F42B373C3000E6A55D /* ShortcutRecorderView.swift in Sources */,
 				B26047B02B35C467006B6324 /* ContentView.swift in Sources */,
 				B26047DD2B35E44C006B6324 /* Shortcut.swift in Sources */,
 				B26047D92B35D4E2006B6324 /* ApplicationMenu.swift in Sources */,
@@ -623,6 +639,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B200B8DB2B373831001B5157 /* XCRemoteSwiftPackageReference "ShortcutRecorder" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Kentzo/ShortcutRecorder";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B200B8DC2B373831001B5157 /* ShortcutRecorder */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B200B8DB2B373831001B5157 /* XCRemoteSwiftPackageReference "ShortcutRecorder" */;
+			productName = ShortcutRecorder;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B26047A22B35C466006B6324 /* Project object */;
 }
